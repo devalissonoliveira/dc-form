@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favdc.png" type="image/x-icon">
+    <title>DC - Formulário de Compra</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <figure class="logo-container">
+            <img class="logo-img" src="assets/img/logodc.png" alt="Logo Digital College">
+        </figure>
+        <section class="ckeckout-container">
+            <i class="fa-solid fa-lock"></i>
+            <p>Checkout Seguro</p>
+        </section>
+    </header>
+    <main>
+        <form action="" class="form-de-compra">
+            <label for="">Escolha o Polo que deseja estudar *</label>
+            <select name="polo">
+                <option></option>
+                <option value="Aldeota">Digital College Aldeota</option required>
+                <option value="Sul">Digital College Sul</option>
+            </select>
+            <section class="info-pessoais-container">
+                <h2>Informações pessoais</h2>
+                <input type="email" placeholder="E-mail *" required>
+                <div class="nome-sobrenome">
+                    <input type="text" placeholder="Nome *" required>
+                    <input type="text" placeholder="Sobrenome *" required>
+                </div>
+                <input type="number" placeholder="CPF *" required>
+                <input type="tel" placeholder="Celular *" required>
+            </section>
+            <section class="anexos-doc-container">
+                <h2>Anexos de Documentos</h2>
+                <label for="">RG *</label>
+                <input type="file" required>
+                <label for="">CPF *</label>
+                <input type="file" required>
+            </section>
+            <section class="end-faturamento-container">
+                <h2>Endereço de Faturamento</h2>
+                <input type="text" placeholder="País *" value="Brasil" required>
+                <input type="number" placeholder="CEP *" required>
+                <div class="end-numero">
+                    <input type="text" placeholder="Endereço *" required>
+                    <input type="text" placeholder="Número *" required>
+                </div>
+                <input type="number" placeholder="Bairro *" required>
+                <input type="number" placeholder="Complemento (opcional) *">
+                <div class="cidade-estado">
+                    <input type="text" placeholder="Cidade *" required>
+                    <input type="text" placeholder="Estado *" required>
+                </div>
+            </section>
+            <section class="aceite-politicas">
+                <div class="checkbox-politicas"><input type="checkbox"><label for="">Aceito as Políticas de privacidade, Políticas de reembolso e Termos contratuais *</label></div>
+                <button class="btn-fim-compra">Finalizar compra</button>
+                <div class="poli-termo-pag-100-seg">
+                    <div class="link-politicas-termo">
+                        <a href="#">Política de privacidade</a>
+                        <hr>
+                        <a href="#">Política de reembolso</a>
+                        <hr>
+                        <a href="#">Termos contratuais</a>
+                    </div>
+                    <p id="pag-100-seg">* Pagamento 100% seguro</p>
+                </div>      
+            </section>
+        </form>
+    </main>
+</body>
+</html>
