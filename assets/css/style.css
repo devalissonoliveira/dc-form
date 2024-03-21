@@ -1,0 +1,156 @@
+/* REGRAS CSS */
+@charset 'UTF-8';
+
+/* IMPORTACAO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* RESET CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+
+body{    
+    font-family: "Roboto", sans-serif;
+    background-color: #F9F9F9;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    background-color: #000;
+    justify-content: space-evenly;
+    padding: 1rem 15rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.logo-img{
+    width: 10rem;
+}
+
+.ckeckout-container{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.ckeckout-container * {
+    font-size: 1.5em;
+    margin: auto 0.3rem;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.form-de-compra{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-de-compra section{
+    border: 1px solid #DDD;
+    margin: 0.5rem 0;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+}
+
+label{
+    color: #3d3d3d;
+}
+
+select , input{
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #BFBFBF;
+    color: #3d3d3d;
+    margin: 0.5rem 0;
+    padding: 0.3rem 0.8rem;
+}
+
+.info-pessoais-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-pessoais-container .nome-sobrenome, .end-faturamento-container .end-numero, .end-faturamento-container .cidade-estado{
+    display: flex;
+    justify-content:space-between;
+    gap: 1rem;
+}
+
+.info-pessoais-container .nome-sobrenome input, .end-faturamento-container .end-numero input, .end-faturamento-container .cidade-estado input{
+    width: 50%;
+}
+
+.anexos-doc-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.anexos-doc-container label {
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.end-faturamento-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.aceite-politicas{
+    display: flex;
+    flex-direction: column;
+}
+
+.aceite-politicas .checkbox-politicas{
+    display: flex;
+    align-items: center;
+}
+
+.aceite-politicas input{
+   height: auto;
+   margin-right: 0.2rem;
+}
+
+.aceite-politicas label{
+    font-size: 0.8em;
+ }
+
+.aceite-politicas .btn-fim-compra{
+    height: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    margin: 0.7rem 0;
+    cursor: pointer;
+ }
+
+.aceite-politicas .poli-termo-pag-100-seg {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background-color: #F9F9F9;
+}
+
+.aceite-politicas .link-politicas-termo{
+    display: flex;
+    font-size: 0.8em;
+    justify-content: space-evenly;
+    opacity: 0.7;
+ }
+
+#pag-100-seg{
+    font-size: 0.8em;
+    margin: 0.5rem auto;
+    color: #3d3d3d;
+}
+
